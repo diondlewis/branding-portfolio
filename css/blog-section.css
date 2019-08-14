@@ -97,3 +97,26 @@
   opacity: 1;
   transform: translate3d(0, -0, 0)
 }
+
+/* Tablets */
+@media only screen and (max-width: 960px){
+  #blog-section .blog-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 588px 588px 588px;
+      grid-gap: 15px;
+      overflow: hidden;
+  }
+
+}
+
+/* Phones */
+@media only screen and (max-width: 767px){
+  #blog-section .blog-container {
+      grid-template-columns: 1fr;
+      grid-template-rows: 400px 400px 400px 400px 400px 400px;
+  }
+  #blog-section .title h2 {
+      font-size: 3rem;
+  }
+}
